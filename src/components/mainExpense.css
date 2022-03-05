@@ -1,0 +1,82 @@
+.MainExpense {
+  height: 32rem;
+  background-color: white;
+  width: 32%;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 0.5rem;
+}
+
+.balance {
+  text-align: center;
+}
+
+.balance h2 {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.balance .price {
+  margin: 0;
+}
+
+.speechy-text {
+  text-align: center;
+  margin: 1rem;
+}
+
+.speechy-text > p {
+  margin: 0.5rem;
+}
+
+.divider {
+  margin: 0.5rem;
+  height: 2px;
+  background-color: purple;
+}
+
+.add-expenses {
+  padding: 1rem;
+}
+
+.expense-form select {
+  width: 10rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 4px;
+  color: purple;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  flex-wrap: wrap;
+}
+
+input {
+  outline: none;
+  width: 10rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 4px;
+  color: purple;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 8px;
+  padding: 0.2rem;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 8px;
+  height: 2rem;
+  background-color: chartreuse;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+}
