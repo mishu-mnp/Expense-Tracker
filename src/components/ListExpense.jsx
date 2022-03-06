@@ -1,31 +1,38 @@
 import React from 'react';
 import './listExpense.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoneyCheckDollar, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const ListExpense = () => {
+
+    // Transactions data
+    const transactions = [
+        { id: 1, type: 'Expense', category: 'Travelling', amount: '150', date: '12 Jan 2022' },
+        { id: 2, type: 'Income', category: 'Salary', amount: '2000', date: '01 Feb 2022' },
+        { id: 3, type: 'Expense', category: 'Fees', amount: '500', date: '16 Feb 2022' },
+        { id: 4, type: 'Expense', category: 'Shopping', amount: '100', date: '20 Feb 2022' },
+    ]
+
     return (
         <div className='ListExpense'>
-            <div className="list-data">
-                <div className="data-left">
-                    <h3>Travel</h3>
-                    <p>$ <span className='amount'>200</span> <span className='date'>{new Date().getTime()}</span></p>
-                </div>
-                <div className="delete-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z" />
-                    </svg>
-                </div>
-            </div>
-            <div className="list-data">
-                <div className="data-left">
-                    <h3>Fees</h3>
-                    <p>$ <span className='amount'>12000</span> <span className='date'>{new Date().getTime()}</span></p>
-                </div>
-                <div className="delete-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z" />
-                    </svg>
-                </div>
-            </div>
+            {transactions.map((transaction) => {
+                return (
+                    <div key={transaction.id} className="list-data">
+                        <div className="transaction-type">
+                            <FontAwesomeIcon icon={faMoneyCheckDollar} className='icon icon-dollar'
+                                style={{ color: transaction.type === 'Income' ? 'green' : 'red' }} />
+                        </div>
+                        <div className="data-left">
+                            <h3>{transaction.category}</h3>
+                            <p>$ <span className='amount'>{transaction.amount}</span> <span className='date'>{transaction.date}</span></p>
+                        </div>
+                        <div className="delete-right">
+                            <FontAwesomeIcon icon={faTrash} className='icon icon-trash' />
+                        </div>
+                    </div>
+                )
+            })}
+
         </div>
     )
 }

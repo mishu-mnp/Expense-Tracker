@@ -7,9 +7,15 @@
   border-radius: 10px;
 }
 
+.transaction-type h2 {
+  font-size: 1.2rem;
+  flex: 0.3;
+}
+
 .list-data {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .date {
@@ -17,11 +23,11 @@
 }
 
 .data-left {
-  flex: 0.7;
+  flex: 0.6;
 }
 
 .delete-right {
-  flex: 0.3;
+  flex: 0.1;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -31,4 +37,8 @@
 .delete-right svg {
   height: 1.2rem;
   cursor: pointer;
+}
+
+.icon {
+  height: 2rem;
 }

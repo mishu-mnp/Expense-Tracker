@@ -5,7 +5,8 @@
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  position: relative;
 }
 
 .title {
@@ -28,4 +29,13 @@
 
 .pie-chart {
   text-align: center;
+}
+
+.strip {
+  position: absolute;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

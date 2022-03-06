@@ -14,6 +14,7 @@ const SpendCard = (props) => {
                     </div>
                 </div>
             </div>
+            <div className='strip' style={{ backgroundColor: title === 'Income' ? 'green' : 'red' }}></div>
         </div>
     )
 }
