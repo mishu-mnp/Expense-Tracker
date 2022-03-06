@@ -1,10 +1,6 @@
 .ListExpense {
-  padding: 0.4rem;
-  margin: 0.6rem;
-  height: 8rem;
-  border: 1px solid purple;
-  overflow-y: auto;
-  border-radius: 10px;
+  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 .transaction-type h2 {
@@ -15,7 +11,7 @@
 .list-data {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .date {

@@ -80,3 +80,10 @@ input {
   padding: 5px;
   border-radius: 5px;
 }
+
+.expense-data {
+  height: 8rem;
+  border: 1px solid purple;
+  border-radius: 10px;
+  overflow-y: auto;
+}

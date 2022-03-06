@@ -99,7 +99,11 @@ const MainExpense = () => {
                         </div>
                     </div>
                     <div className="expense-data">
-                        <ListExpense />
+                        {transactions.map(transaction => (
+                            <ListExpense key={transaction.id} id={transaction.id} type={transaction.type} className='transaction-data'
+                                amount={transaction.amount} category={transaction.category} date={transaction.date}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
