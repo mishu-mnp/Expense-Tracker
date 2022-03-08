@@ -14,7 +14,7 @@
 
 .balance h2 {
   display: inline-block;
-  margin: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .balance .price {
@@ -23,11 +23,11 @@
 
 .speechy-text {
   text-align: center;
-  margin: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .speechy-text > p {
-  margin: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .divider {

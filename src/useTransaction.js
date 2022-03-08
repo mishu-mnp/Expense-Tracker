@@ -25,7 +25,6 @@ const useTransaction = (title) => {
     // for chart data
     // we require those categories whose amount > 0
     const filteredCategories = categories.filter((c) => c.amount > 0)
-    filteredCategories.map((c) => console.log(c.amount))
 
     // prepare chart data
     const chartData = {

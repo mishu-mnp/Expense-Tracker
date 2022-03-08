@@ -1,6 +1,9 @@
+import { ErrorPanel, PushToTalkButton, PushToTalkButtonContainer } from '@speechly/react-ui';
 import './App.css';
 import MainExpense from './components/MainExpense';
 import SpendCard from './components/SpendCard';
+
+
 
 function App() {
   return (
@@ -10,6 +13,10 @@ function App() {
         <MainExpense />
         <SpendCard title='expense' />
       </div>
+      <PushToTalkButtonContainer>
+        <PushToTalkButton />
+        <ErrorPanel />
+      </PushToTalkButtonContainer>
     </div>
   );
 }
