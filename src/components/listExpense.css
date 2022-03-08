@@ -24,7 +24,7 @@
 
 .delete-right {
   flex: 0.1;
-  height: 4rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,4 +37,15 @@
 
 .icon {
   height: 2rem;
+}
+
+/* Responsive */
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+  .list-data {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    height: 1.2rem;
+  }
 }

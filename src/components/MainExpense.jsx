@@ -31,7 +31,7 @@ const MainExpense = () => {
 
     useEffect(() => {
         if (segment) {
-            console.log(segment)
+            // console.log(segment)
             if (segment.intent.intent === 'add_expense') {
                 setData({ ...FormData, type: 'expense' })
             } else if (segment.intent.intent === 'add_income') {
@@ -69,6 +69,8 @@ const MainExpense = () => {
         }
     }, [segment])
 
+    const balance = transactions?.reduce((acc, currVal) => currVal.type === 'expense' ? acc - currVal.amount : acc + currVal.amount, 0)
+
 
     const selectedCategories = data.type === 'income' ? incomeCategories : expenseCategories
 
@@ -79,7 +81,7 @@ const MainExpense = () => {
                     <h1 className='title'>Expense Tracker</h1>
                     <div className="balance">
                         <h2>Total Balance</h2>
-                        <span className='price'>$ <span className='amount'>4000</span></span>
+                        <span className='price'>$ <span className='amount'>{balance}</span></span>
                     </div>
                     <div className="speechy-text">
                         <p>Try to Speak</p>

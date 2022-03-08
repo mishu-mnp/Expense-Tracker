@@ -18,7 +18,7 @@
 }
 
 .balance .price {
-  margin: 0;
+  margin: 5px;
 }
 
 .speechy-text {
@@ -48,6 +48,7 @@
   color: purple;
   font-weight: 400;
   font-size: 15px;
+  margin-bottom: 8px;
 }
 
 .form-data {
@@ -86,4 +87,87 @@ input {
   border: 1px solid purple;
   border-radius: 10px;
   overflow-y: auto;
+}
+
+/* Responsive */
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+  .balance {
+    font-size: 0.8rem;
+  }
+
+  .form-data {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .expense-form select {
+    width: 100%;
+  }
+
+  .date {
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 2px;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .speechly-voice-text {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .expense-data {
+    height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+  .MainExpense {
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .expense-data {
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 540px) {
+  .form-data > div {
+    width: 100%;
+  }
+
+  .form-data > div > select,
+  input {
+    width: 100%;
+  }
+
+  .date {
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 2px;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .MainExpense {
+    height: 35rem;
+    width: 80%;
+  }
+
+  .expense-data {
+    height: 8rem;
+  }
+
+  .balance h2 {
+    font-size: 1rem;
+  }
 }

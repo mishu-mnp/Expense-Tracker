@@ -28,7 +28,7 @@ const ListExpense = (props) => {
                     <h3>{category}</h3>
                     <p>$ <span className='amount'>{amount}</span> <span className='date'>{date}</span></p>
                 </div>
-                <div className="delete-right" onClick={deleteTransaction}>
+                <div className="delete-right icon" onClick={deleteTransaction}>
                     <FontAwesomeIcon icon={faTrash} className='icon icon-trash' />
                 </div>
             </div>

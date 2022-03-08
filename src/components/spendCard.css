@@ -7,6 +7,7 @@
   /* padding: 0.5rem; */
   position: relative;
   height: auto;
+  margin: 1rem 0;
 }
 
 .title {
@@ -38,4 +39,41 @@
   width: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+/* Responsive */
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .amount {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 720px) {
+  .spend-card {
+    width: 80%;
+  }
+
+  .spend-card .container {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .amount {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
 }
